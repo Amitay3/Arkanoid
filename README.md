@@ -1,6 +1,6 @@
 # 🧱 Arkanoid – Java OOP Game Project
 
-Welcome to **Arkanoid**, a modern re-creation of the classic brick-breaker game — built entirely in **Java** using **Object-Oriented Programming (OOP)** principles and the **biuoop** graphical library.  
+Welcome to **Arkanoid**, a classic brick-breaker game — built entirely in **Java** using **Object-Oriented Programming (OOP)** principles and a graphical library.  
 
 This project was developed as part of an academic assignment focused on **design patterns**, **code modularity**, and **interactive graphics programming**.
 
@@ -33,7 +33,7 @@ But beware — once the ball falls below the paddle, it’s game over 😬
 
 ---
 
-## 🧱 Object-Oriented Design Highlights
+## Object-Oriented Design Highlights
 
 This project was built from the ground up with **clean OOP structure** in mind:
 
@@ -62,42 +62,34 @@ This architecture promotes **reusability**, **readability**, and **easy scalabil
 
 ## 🚀 Running the Game
 
-Make sure you have **Java installed**, then compile and run the project:
+You have two options: run from source or run the pre-built JAR file.
+
+---
+
+### 🧩 Option 1: Build & Run from Source
+
+Make sure you have **Java (JDK 11 or later)** installed.  
+Then compile and run the project manually:
 
 ```bash
+# Compile all source files into the 'out' folder
 javac -cp ".;biuoop-1.4.jar" -d out @sources.txt
-java -cp ".;biuoop-1.4.jar;out" Ass5Game
-```
 
-Alternatively, start from your custom menu:
-
-```bash
-java -cp ".;biuoop-1.4.jar;out" Arkanoid
+# Run the game
+java -cp ".;biuoop-1.4.jar;out" game.Menu
 ```
 
 ---
 
-## 📂 Project Structure
+### 🎮 Option 2: Run the Pre-Built JAR
 
+In a terminal, in the root folder of this project, simply run:
+
+```bash
+java -jar Arkanoid.jar
 ```
-Arkanoid/
-│
-├── src/
-│   ├── game/
-│   │   ├── Game.java
-│   │   ├── Menu.java
-│   │   ├── Paddle.java
-│   │   ├── Block.java
-│   │   ├── Ball.java
-│   │   └── ...
-│   │
-│   └── Ass5Game.java
-│
-├── biuoop-1.4.jar
-├── out/
-├── sources.txt
-└── README.md
-```
+
+Make sure that `biuoop-1.4.jar` is in the **same directory** as the JAR file (unless it’s already bundled inside).
 
 ---
 
@@ -108,15 +100,6 @@ Through this project, I practiced:
 - Managing **real-time rendering and input handling** via an external GUI library  
 - Building a complete, interactive game loop from scratch  
 - Applying **design patterns** to maintain code clarity and modularity  
-
----
-
-## 🏁 Future Improvements
-
-- Add **multiple levels and difficulty progression**  
-- Introduce **power-ups** (multi-ball, laser paddle, etc.)  
-- Implement **sound effects and background music**  
-- Add **high-score persistence**  
 
 ---
 
